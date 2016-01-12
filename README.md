@@ -1,1 +1,1 @@
-# linux.centos
+# CentOS
