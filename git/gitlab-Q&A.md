@@ -27,3 +27,17 @@ Q:
 ```
 Check GitLab API access: FAILED. code: 502
 ```
+
+A: 根据 error_log 修改 `/etc/nginx/conf.d/gitlab.conf` 配置
+
+```
+upstream gitlab-workhorse {
+  server unix:/home/git/gitlab/tmp/sockets/gitlab-workhorse.socket fail_timeout=0;
+}
+
+修改为
+
+upstream gitlab {
+  server unix:/home/git/gitlab/tmp/sockets/gitlab.socket fail_timeout=0;
+}
+```
