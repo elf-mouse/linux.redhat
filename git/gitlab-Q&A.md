@@ -1,4 +1,4 @@
-Q: 
+Q:
 
 ```
 Git configured for git user? ... _no_
