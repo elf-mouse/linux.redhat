@@ -1,0 +1,4 @@
+/etc/init.d/redis-server start
+/etc/init.d/redis-server stop
+
+/etc/init.d/redis-server restart

@@ -19,3 +19,9 @@ A: 新安裝Linux出现iptables启动错误，提示：No config file。
 5. 输入`service iptables save`保存，提示已经成功保存到`/etc/sysconfig/iptables`。提示：iptables: Saving firewall rules to /etc/sysconfig/iptables: [   OK    ]
 6. 再次输入`ls /etc/sysconfig/`查看可发现配置文件（`iptables`）。
 7. 输入`service iptables start`即可启动。
+
+---
+
+Q: -bash: sz/rz: command not found
+
+A: `yum -y install lrzsz`
