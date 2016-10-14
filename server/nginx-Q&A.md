@@ -8,7 +8,18 @@ Q: nginx: [emerg] bind() to 0.0.0.0:80 failed (13: Permission denied)
 
 A: nginx执行权限问题
 
-```
+```sh
 sudo chown root:wheel /usr/local/Cellar/nginx/1.8.0/bin/nginx
 sudo chmod u+s /usr/local/Cellar/nginx/1.8.0/bin/nginx
+```
+
+---
+
+Q: nginx: [error] invalid PID number "" in "/usr/local/var/run/nginx.pid"
+
+A:
+
+```sh
+nginx -c /usr/local/etc/nginx/nginx.conf
+nginx -s reload
 ```
