@@ -16,7 +16,12 @@ extension=zip.so
 
 * 重启 _php-fpm_
 
-`service php-fpm restart`
+```sh
+# 方法1
+service php-fpm restart
+# 方法2
+kill -USR2 `cat /var/run/php-fpm/php-fpm.pid`
+```
 
 ---
 
