@@ -23,3 +23,14 @@ A:
 nginx -c /usr/local/etc/nginx/nginx.conf
 nginx -s reload
 ```
+
+---
+
+Q:
+
+```
+nginx: [emerg] bind() to 0.0.0.0:8080 failed (48: Address already in use)
+nginx: [emerg] still could not bind()
+```
+
+A: `sudo apachectl stop`
