@@ -14,3 +14,9 @@ vi /etc/sysconfig/network
 NETWORKING=yes
 HOSTNAME=主机名
 ```
+
+__通过端口查询PID__
+
+```
+lsof -ti:3000
+```
