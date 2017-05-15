@@ -17,7 +17,7 @@ server {
 }
 ```
 
-搭建此虚拟主机完成后，就可以将http://test.com的请求全部重写到https://test.com上了
+搭建此虚拟主机完成后，就可以将`http://test.com`的请求全部重写到`https://test.com`上了
 
 ## nginx的497状态码
 
@@ -31,7 +31,7 @@ server {
 
 __思路__
 
-利用error_page命令将497状态码的链接重定向到https://test.com这个域名上
+利用error_page命令将497状态码的链接重定向到`https://test.com`这个域名上
 
 __配置__
 
@@ -63,7 +63,7 @@ server {
 curl baidu.com -vv
 ```
 
-可以看到百度很巧妙的利用meta的刷新作用，将baidu.com跳转到www.baidu.com.因此我们可以基于http://test.com的虚拟主机路径下也写一个index.html，内容就是http向https的跳转
+可以看到百度很巧妙的利用meta的刷新作用，将baidu.com跳转到www.baidu.com.因此我们可以基于`http://test.com`的虚拟主机路径下也写一个index.html，内容就是http向https的跳转
 
 __index.html__
 
