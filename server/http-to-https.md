@@ -13,7 +13,8 @@ server {
     listen  192.168.1.2:80;
     server_name test.com;
 
-    rewrite ^(.*)$  https://$host$1 permanent;
+    #return 301 https://$host$request_uri;
+    rewrite ^(.*)$  https://$server_name$1 permanent;
 }
 ```
 
