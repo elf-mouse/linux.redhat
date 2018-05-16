@@ -1,22 +1,27 @@
-__拷贝隐藏文件__
+**拷贝隐藏文件**
 
-```
+```sh
 cp -a /path/to/a/. /path/to/b
 ```
 
-__修改主机名__
+**修改主机名**
 
-```
+```sh
 vi /etc/sysconfig/network
 
-设置：
-
+# 设置
 NETWORKING=yes
 HOSTNAME=主机名
 ```
 
-__通过端口查询PID__
+**通过端口查询 PID**
 
-```
+```sh
 lsof -ti:3000
+```
+
+**批量杀死进程**
+
+```sh
+ps -ef | grep 'keywords' | grep -v grep | awk '{print $2}' | xargs kill -9
 ```
