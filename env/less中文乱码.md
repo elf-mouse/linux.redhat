@@ -1,0 +1,3 @@
+```sh
+export LESS=-isMrf
+```
